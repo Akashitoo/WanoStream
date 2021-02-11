@@ -99,7 +99,39 @@ footer{
 	color: #DADADA;
 }
 
+@media screen and (max-width:1024px)
+{
+	.logo{
+		display: flex;
+		justify-content: center;
+		width: 80%;
+	}
+	.menu-nav ul li.btn{
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 1px;
+	}
+	.menu-nav ul li.btn a{
+		font-size: 45px;
+	}
+	#content{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+	.série img{
+		width: 70%;
+		padding:12px;
 
+
+
+	}
+	#search{
+		display: grid;
+		width: 90%;
+		height: 75px;
+	}
+}
 
 
 
