@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
 body{
 	background-color:#1A1A1A;
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
 }
+body h2{
+	font-family: 'Arial Black', Gadget, sans-serif;
+}
+
+
 
 /*.logo{
 	width: 150px;
@@ -22,7 +28,7 @@ body{
 	font-size: 30px;
 }
 
-.menu-nav ul li.btn a:hover{	
+.menu-nav ul li.btn a:hover{
 	color: #D81C1C;
 	text-decoration: none;
 	padding: 50px;
@@ -36,7 +42,7 @@ body{
 	margin-left: auto;
 	margin-right: auto;
 }
-		
+
 		.container{
 			margin-top: 150px;
 			display: flex;
@@ -124,7 +130,7 @@ body{
 		}
 		footer{
 			margin-top: 100px;
-		}      						 
+		}
 
 #search{
 		margin-top: 10px;
@@ -138,10 +144,11 @@ body{
 		background-color: #232121;
 		font-size: 25px;
 		color: white;
-	
+
 }
 input {
 	padding-left: 20px;
+	animation:
 }
 #content{
 	margin-top: 50px;
@@ -149,10 +156,10 @@ input {
 
 }
 
-.série{ 
+.série{
 	padding-left: 5.5px;
 	padding-right: 5.5px;
-}	
+}
 .série img{
 	padding: 7.5px;
 	background-color: #414649;
@@ -214,14 +221,15 @@ footer{
 		width: 95%;
 		flex-direction: column;
 		align-content:center;
-		margin: 0 auto;	
+		margin: 0 auto;
 	}
-	
+
 	.resume{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		order: 2;
 	}
 	.synopsis{
 		font-size: 60%;
@@ -231,8 +239,8 @@ footer{
 
 	.container img{
 		display: flex;
-		justify-content: center;
-		align-items: center;
+		justify-content: flex-start;
+		align-items: flex-start;
 	}
 	.épisodes{
 		margin-left: 50px;
@@ -248,8 +256,8 @@ footer{
 	}
 }
 
-	
-	
+
+
 
 
 /*div.content ul li.série{
