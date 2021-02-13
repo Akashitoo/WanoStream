@@ -75,6 +75,14 @@ body h2{
 			border-radius: 30px;
 			padding: 7.5px;
 			background-color: #414649;
+			
+			
+.menu-nav ul li.langue a{
+			display: inline-block ;
+			list-style-type: none; 
+			padding :7.5px;
+			background-color : white;
+			
 
 
 
