@@ -185,6 +185,7 @@ input {
 			color : black;
 			background-color : white;
 			text-decoration: none ; 
+}			
 			
 
 footer{
@@ -192,8 +193,7 @@ footer{
 	color: #DADADA;
 }
 
-@media screen and (max-width:1024px)
-{
+@media screen and (max-width:1024px){
 	.logo{
 		display: flex;
 		justify-content: center;
