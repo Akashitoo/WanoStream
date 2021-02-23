@@ -42,7 +42,7 @@
 	</center>
 <!---Barre de Recherche--->
 	<center>
-		<input type="search" id="search" value="" onchange="ouvrirpage()" placeholder="Recherchez un animé ..." autocomplete="off">
+		<input type="text" id="itemDeRecherche" onkeyup="searchSystem()" placeholder="Rech">
 	</center>
 <!---Contenu--->
 
@@ -130,6 +130,8 @@
 		<a class="série" href="KOISURU-ASTEROID-VOSTFR.html"><img src="img/KA.jpg" width="250"></a>
 		<a class="série" href="DANMACHI-VOSTFR.html"><img src="img/D.jpg" width="250"></a>
 		<a class="série" href="GTO-VOSTFR.html"><img src="img/GTO.jpg" width="250"></a>
+	</br></br>
+	    <a class="série" href="WONDER-EGG-PRIORITY-VOSTFR.html"><img src="img/WEP.jpg" width="250"></a>
 	</div>
 
 	<canvas id="canvas"></canvas>
@@ -144,26 +146,29 @@
 /*canvas{
 		display: flex;
 		border: 5px solid white;
-		margin: auto;*/
-	}
+		margin: auto;
+	}*/
+
+
 </style>
 <script>
-/*
-	var canvas = document.getElementById('canvas');
-	var ctx = canvas.getContext('2d');
-	canvas.width = 600;
- 	canvas.height = 600;
-	ctx.fillRect(250 , 500 , 100 , 20 )
-	ctx.beginPath();
-	ctx.arc(300 , 100 ,25,0,2*Math.PI);
-	ctx.fillStyle = 'white';
-	ctx.fill();
-	ctx.stroke();
-	function gravity(){
-		draw();
-		update();
-	} */
-
+	function searchSystem() {
+	  var input, filter, ul, li, a, i, txtValue;
+	  input = document.getElementById('itemDeRecherche');
+	  filter = input.value.toUpperCase();
+	  ul = document.getElementById("myUL");
+	  li = ul.getElementsByTagName('li');
+	
+	  for (i = 0; i < li.length; i++) {
+		a = li[i].getElementsByTagName("a")[0];
+		txtValue = a.textContent || a.innerText;
+		if (txtValue.toUpperCase().indexOf(filter) > -1) {
+		  li[i].style.display = "";
+		} else {
+		  li[i].style.display = "none";
+		}
+	  }
+	}
 </script>
 </body>
 </html>
