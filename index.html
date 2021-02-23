@@ -42,7 +42,7 @@
 	</center>
 <!---Barre de Recherche--->
 	<center>
-		<input type="text" id="itemDeRecherche" onkeyup="searchSystem()" placeholder="Rech">
+		<input type="text" id="itemDeRecherche" onkeyup="searchSystem()" placeholder="Que recherchez vous ?">
 	</center>
 <!---Contenu--->
 
@@ -57,7 +57,7 @@
 		<a id="Dragon Ball Z" class="série" href="DBZK.html"><img src="img/DBZK.jpg" width="250"></a>
 		<a id="Dragon Ball Super" class="série" href="DRAGON-BALL-SUPER-VOSTFR.html"><img src="img/DBS.jpg" width="250"></a>
 		<a id ="One Punch Man" class="série" href="OPM.html"><img src="img/OPM.jpg" width="250"></a>
-		<a class="série" href="BLACK-CLOVER-VOSTFR.html"><img src="img/BC.jpg" width="250"></a>
+		<a id= "Black Clover" href="BLACK-CLOVER-VOSTFR.html"><img src="img/BC.jpg" width="250"></a>
 		</br></br>
 		<a class="série" href="THE-PROMISED-NEVERLAND-VOSTFR.html"><img src="img/TPN.jpg" width="250"></a>
 		<a class="série" href="HUNTER-X-HUNTER.html"><img src="img/HXH.jpg" width="250"></a>
@@ -132,6 +132,10 @@
 		<a class="série" href="GTO-VOSTFR.html"><img src="img/GTO.jpg" width="250"></a>
 	</br></br>
 	    <a class="série" href="WONDER-EGG-PRIORITY-VOSTFR.html"><img src="img/WEP.jpg" width="250"></a>
+	    <a class="série" href="TSUBASA-CHRONICLE-VOSTFR.html"><img src="img/TC.jpg" width="250"></a>
+		<a class="série" href="RWBY-VOSTFR.html"><img src="img/RWBY.jpg" width="250"></a>
+		<a class="série" href="WORLD-TRIGGER-VOSTFR.html"><img src="img/WT.jpg" width="250"></a>
+		<a class="série" href="HORIMIYA-VOSTFR.html"><img src="img/HRM.jpg" width="250"></a>
 	</div>
 
 	<canvas id="canvas"></canvas>
@@ -156,7 +160,7 @@
 	  var input, filter, ul, li, a, i, txtValue;
 	  input = document.getElementById('itemDeRecherche');
 	  filter = input.value.toUpperCase();
-	  ul = document.getElementById("myUL");
+	  ul = document.getElementById("content");
 	  li = ul.getElementsByTagName('li');
 	
 	  for (i = 0; i < li.length; i++) {
